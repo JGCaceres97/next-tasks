@@ -1,0 +1,30 @@
+@URL = http://localhost:3000
+
+### GET all tasks
+GET {{URL}}/api/tasks
+
+### Create new task
+POST {{URL}}/api/tasks
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "title": "New task",
+  "completed": false
+}
+
+### GET task by id
+GET {{URL}}/api/tasks/10
+
+### Update existing task
+PUT {{URL}}/api/tasks/3
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "title": "Edited task",
+  "completed": true
+}
+
+### Delete task by id
+DELETE {{URL}}/api/tasks/1
