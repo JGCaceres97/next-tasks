@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 import { HttpStatusCode } from './enums';
 
 type TypeResponse<T> = NextResponse<Body<T>> | NextResponse<MessageResponse>;
-type Body<T> = string | Object | Array<T>;
+type Body<T> = string | object | Array<T>;
 
 /**
  *
