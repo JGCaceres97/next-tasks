@@ -3,6 +3,9 @@
 # editor
 .vscode
 
+# prisma
+dev.db*
+
 # dependencies
 /node_modules
 /.pnp
